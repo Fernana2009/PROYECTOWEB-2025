@@ -1,0 +1,106 @@
+/* ---------- CONFIGURACIÓN GENERAL ---------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #2b2b42);
+    color: white;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ---------- CONTENEDOR PRINCIPAL ---------- */
+.contenedor-juegos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+/* ---------- TARJETAS DE JUEGOS ---------- */
+.card {
+    width: 280px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    overflow: hidden;
+    transition: transform .3s, box-shadow .3s;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h2 {
+    padding: 15px;
+}
+
+/* ---------- SLIDER (CARRUSEL) ---------- */
+.slider {
+    width: 90%;
+    margin: 40px auto;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.slider::-webkit-scrollbar {
+    height: 10px;
+}
+
+.slider::-webkit-scrollbar-thumb {
+    background: #6b6bff;
+    border-radius: 10px;
+}
+
+.coach-card {
+    min-width: 260px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    text-align: center;
+    transition: transform .3s;
+}
+
+.coach-card:hover {
+    transform: scale(1.05);
+}
+
+.coach-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.stars {
+    font-size: 22px;
+    color: #FFD700;
+    margin-top: 5px;
+}
+
+.descripcion {
+    padding: 0 15px;
+    font-size: 15px;
+    opacity: 0.9;
+}
