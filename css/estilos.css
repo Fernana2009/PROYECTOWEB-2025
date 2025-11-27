@@ -6,7 +6,6 @@ html, body {
 }
 
 body {
-<<<<<<< HEAD
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -14,23 +13,18 @@ body {
 }
 
 /* ------------------------- */
-/*  HEADER (barra negra)     */
+/*  HEADER                   */
 /* ------------------------- */
-
 .header {
     width: 100%;
     height: 70px;
     background: black;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* << Ordena todo automáticamente */
+    justify-content: space-between;
     padding: 0 25px;
     position: relative;
 }
-.header {
-    position: relative;  /* <--- AGREGA ESTO */
-}
-
 
 /* LOGO */
 .logo {
@@ -41,7 +35,7 @@ body {
     cursor: pointer;
 }
 
-/* FRASE (centrada SIEMPRE) */
+/* FRASE CENTRADA */
 .tagline {
     position: absolute;
     top: 50%;
@@ -59,16 +53,14 @@ body {
     width: 280px;
     padding: 10px 30px;
     border-radius: 25px;
-
     background-color: #1e1e1e;
     border: 1px solid #2a2a2a;
     color: #ffffff;
-
     font-size: 15px;
     outline: none;
     box-sizing: border-box;
-
     transition: background-color .2s ease, box-shadow .2s ease;
+    margin-right: 45px; /* separación con el borde derecho */
 }
 
 .buscador::placeholder {
@@ -83,23 +75,13 @@ body {
     background-color: #2a2a2a;
     box-shadow: 0 0 8px #00000080;
 }
-.header {
-    position: relative;  /* <--- AGREGA ESTO */
-}
 
-/* CONTENEDOR DE RESULTADOS */
+/* CUADRO DE RESULTADOS */
 .search-results {
     position: absolute;
-    top: 65px;
-
-    /* 🔥 Ahora sigue exactamente la posición del buscador */
-    left: 25px;
-    right: auto;
-
-    /* Calculamos el mismo espacio que dejaste a la derecha */
-    margin-left: 0px;
-
-    width: 300px;
+    top: 55px;                /* justo debajo del buscador */
+    right: 70px;              /* alineado con el buscador */
+    width: 280px;             /* mismo ancho del buscador */
     background: #1b1b1b;
     border: 1px solid #333;
     border-radius: 8px;
@@ -108,7 +90,6 @@ body {
     box-shadow: 0 5px 15px rgba(0,0,0,0.5);
     z-index: 999;
 }
-
 
 .search-item {
     padding: 10px 15px;
@@ -121,25 +102,14 @@ body {
     background: #292929;
 }
 
-/* ICONO DE VERIFICACIÓN */
+/* ICONO DE VERIFICACIÓN (oculto) */
 .verified-icon {
-    font-size: 22px;
-    margin-left: 15px;
-    cursor: pointer;
-    opacity: 0.8;
-    transition: 0.2s ease;
+    display: none !important;
 }
 
-.verified-icon:hover {
-    opacity: 1;
-    transform: scale(1.15);
-}
-
-
 /* ------------------------- */
-/*  SLIDER PRINCIPAL         */
+/*  SLIDER                   */
 /* ------------------------- */
-
 .slider-container {
     position: relative;
     width: 100%;
@@ -205,47 +175,31 @@ body {
     z-index: 10;
     border-radius: 8px;
 }
+
 .prev { left: 20px; }
 .next { right: 20px; }
 
-
-/* TEXTO ENCIMA DE LA IMAGEN (versión anterior, ya no usada pero útil si la necesitas) */
+/* TEXTO DESACTIVADO (antiguo) */
 .slide::after {
-    content: attr(data-title);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 85px;
-    font-weight: bold;
-    color: white;
-    text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
-    display: none; /* << lo ocultamos porque ahora usas .slide-title */
+    display: none;
 }
 
-/* TEXTO NUEVO MODERNO */
+/* TEXTO MODERNO */
 .slide-title {
     position: absolute;
     bottom: 35px;
     left: 50%;
     transform: translateX(-50%);
-
     font-size: 48px;
     font-weight: 900;
     color: white;
     letter-spacing: 3px;
-
-    background: none;
     padding: 10px 25px;
-
     text-shadow:
         0 0 12px rgba(0, 0, 0, 0.85),
         0 0 25px rgba(0, 0, 0, 0.7);
-
     -webkit-text-stroke: 0.7px rgba(0, 0, 0, 0.35);
-
     opacity: 0;
-    transform: translateX(-50%) translateY(25px);
     animation: fadeUp 0.8s ease-out forwards;
 }
 
@@ -268,7 +222,7 @@ body {
     transition: 0.3s ease;
 }
 
-/* EFECTO NETFLIX A LOS LADOS */
+/* EFECTO NETFLIX */
 .slide:not(.active) img {
     filter: blur(1.5px) brightness(0.85);
     transition: 0.4s ease;
@@ -282,20 +236,10 @@ body {
 .slide.active img {
     transform: translateX(-5px);
 }
-/* Ocultar el icono de verificación */
-.verified-icon {
-    display: none !important;
-}
 
-.buscador {
-    margin-right: 45px;   /* ⭐ separa la barra del borde derecho */
-}
-=======
-    font-family: Arial, sans-serif;
-    background: #f2f2f2;
-    margin: 0;
-}
-
+/* ------------------------- */
+/*  TARJETAS DE JUEGOS      */
+/* ------------------------- */
 .titulo {
     text-align: center;
     padding: 20px;
@@ -328,4 +272,3 @@ body {
 .card h2 {
     padding: 10px;
 }
->>>>>>> 7cee3e9c0289159d25d4505a50056622a8a0824a
