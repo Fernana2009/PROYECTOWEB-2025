@@ -1,0 +1,131 @@
+/* ======== FUENTE GAMER ======== */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* ======== ESTILOS GENERALES ======== */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #0b0b0d, #1a1a2e);
+    color: white;
+}
+
+/* CONTENEDOR PERFIL */
+.perfil-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+/* TARJETA COACH */
+.coach-card {
+    display: flex;
+    align-items: center;
+    background: #141418;
+    border: 3px solid #00eaff;
+    width: 85%;
+    max-width: 1000px;
+    height: 80%;
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 0 40px #00eaff80;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.coach-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 0 60px #00f7ff80;
+    border-color: #00f7ff;
+}
+
+/* IMAGEN A LA IZQUIERDA */
+.coach-card img {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    border: 4px solid #00eaff;
+    object-fit: cover;
+    margin-right: 40px;
+    box-shadow: 0 0 30px #00eaff80;
+}
+
+/* INFORMACIÓN A LA DERECHA */
+.coach-info {
+    text-align: left;
+    flex: 1;
+}
+
+/* NOMBRE */
+.coach-info h2 {
+    font-size: 36px;
+    margin: 0;
+    color: #00eaff;
+    text-shadow: 0 0 15px #00eaff;
+}
+
+/* ESTRELLAS */
+.stars {
+    font-size: 26px;
+    margin: 10px 0;
+    color: gold;
+    text-shadow: 0 0 8px #ffd700;
+}
+
+/* DESCRIPCIÓN */
+.descripcion {
+    font-size: 20px;
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+/* PRECIO */
+.precio {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00ffb0;
+    margin: 20px 0;
+    text-shadow: 0 0 10px #00ffb0;
+}
+
+/* BOTÓN CONTRATAR */
+.contratar-btn {
+    padding: 16px 40px;
+    background: linear-gradient(45deg, #00eaff, #00ffb0);
+    color: #0b0b0d;
+    border: none;
+    border-radius: 18px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(0, 234, 255, 0.6);
+    transition: 0.3s;
+}
+
+.contratar-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 25px rgba(0, 255, 176, 0.8);
+}
+
+/* BOTÓN VOLVER */
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 16px 28px;
+    background: linear-gradient(45deg, #00eaff, #00ffb0);
+    color: #0b0b0d;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 14px;
+    text-decoration: none;
+    box-shadow: 0 5px 20px rgba(0, 234, 255, 0.6);
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 25px rgba(0, 255, 176, 0.8);
+}
