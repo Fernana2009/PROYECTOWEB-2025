@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Mi Proyecto Web</title>
-<link rel="stylesheet" href="css/estilos.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CorePlay</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
 </head>
+
 <body>
-<h1>¡Hola Mundo! 🎉</h1>
-<script src="js/main.js"></script>
+
+    <!-- HEADER / Barra negra -->
+   <header class="header">
+
+    <a href="index.html" class="logo">CorePlay</a>
+
+    <div class="tagline">Explora • Aprende • Domina</div>
+
+    <div class="header-right">
+      <input type="text" placeholder="Buscar..." class="buscador">
+    </div>
+    <div class="search-results" id="searchResults"></div>
+</header>
+
+   <!-- SLIDER PRINCIPAL -->
+<div class="slider-container">
+
+    <button class="btn prev">&#10094;</button>
+
+    <div class="slider">
+
+        <div class="slide">
+            <img src="img/imagenes/clashroyale.jpg">
+            <div class="slide-title">CLASH ROYALE</div>
+        </div>
+
+        <div class="slide">
+            <img src="img/imagenes/fortnite.jpg">
+            <div class="slide-title">FORTNITE</div>
+        </div>
+
+        <div class="slide">
+            <img src="img/imagenes/minecraft.jpg">
+            <div class="slide-title">MINECRAFT</div>
+        </div>
+
+    </div>
+
+    <button class="btn next">&#10095;</button>
+
+</div>
+
+
+<script src="js/script.js"></script>
+
 </body>
 </html>
