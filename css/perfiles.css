@@ -1,131 +1,171 @@
-/* ======== FUENTE GAMER ======== */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+/* ------------------------------------- */
+/*            CONFIGURACIÓN GENERAL      */
+/* ------------------------------------- */
 
-/* ======== ESTILOS GENERALES ======== */
-body, html {
-    height: 100%;
+body {
     margin: 0;
-    font-family: 'Orbitron', sans-serif;
-    background: linear-gradient(135deg, #0b0b0d, #1a1a2e);
+    padding: 0;
+    background: #111;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 
-/* CONTENEDOR PERFIL */
+.back-btn {
+    display: inline-block;
+    margin: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    background: #000;
+    padding: 7px 13px;
+    border-radius: 8px;
+    transition: 0.3s;
+    border: 1px solid #222;
+}
+.back-btn:hover {
+    background: #222;
+}
+
+/* ------------------------------------- */
+/*       CONTENEDOR PRINCIPAL            */
+/* ------------------------------------- */
+
 .perfil-container {
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    padding: 20px;
+    margin-top: 30px;
 }
 
-/* TARJETA COACH */
+/* ------------------------------------- */
+/*             TARJETA DEL PROFESOR      */
+/* ------------------------------------- */
+
 .coach-card {
     display: flex;
-    align-items: center;
-    background: #141418;
-    border: 3px solid #00eaff;
-    width: 85%;
-    max-width: 1000px;
-    height: 80%;
-    border-radius: 25px;
-    padding: 40px;
-    box-shadow: 0 0 40px #00eaff80;
-    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    flex-direction: row;
+    align-items: center;        /* centra verticalmente la imagen */
+    background: #1a1a1a;
+    padding: 25px;
+    border-radius: 20px;
+    width: 850px;               /* ancho ajustado */
+    gap: 25px;
+    box-shadow: 0 0 25px #000;
+    border: 1px solid #2b2b2b;
 }
 
-.coach-card:hover {
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 0 60px #00f7ff80;
-    border-color: #00f7ff;
-}
+/* ------------------------------------- */
+/*           IMAGEN DEL PROFESOR         */
+/* ------------------------------------- */
 
-/* IMAGEN A LA IZQUIERDA */
 .coach-card img {
-    width: 250px;
-    height: 250px;
+    width: 250px;               /* tamaño ideal para calidad */
+    height: 325px;              /* mantener proporción real */
     border-radius: 15px;
-    border: 4px solid #00eaff;
-    object-fit: cover;
-    margin-right: 40px;
-    box-shadow: 0 0 30px #00eaff80;
+    object-fit: cover;          
+    object-position: center;    
+    box-shadow: 0 0 15px #000;
 }
 
-/* INFORMACIÓN A LA DERECHA */
+/* ------------------------------------- */
+/*          INFORMACIÓN DEL COACH        */
+/* ------------------------------------- */
+
 .coach-info {
-    text-align: left;
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
 }
 
-/* NOMBRE */
-.coach-info h2 {
-    font-size: 36px;
+.coach-info h2,
+.coach-name {
+    font-size: 22px;
     margin: 0;
-    color: #00eaff;
-    text-shadow: 0 0 15px #00eaff;
+    font-weight: bold;
 }
 
-/* ESTRELLAS */
 .stars {
-    font-size: 26px;
-    margin: 10px 0;
-    color: gold;
-    text-shadow: 0 0 8px #ffd700;
+    font-size: 16px;
+    margin: 0;
 }
 
-/* DESCRIPCIÓN */
 .descripcion {
-    font-size: 20px;
-    margin: 15px 0;
-    line-height: 1.6;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #ddd;
+    margin-top: 5px;
 }
 
-/* PRECIO */
+/* ------------------------------------- */
+/*         SECCIONES DETALLADAS          */
+/* ------------------------------------- */
+
+.coach-section {
+    margin-top: 8px;
+    background: #141414;
+    padding: 8px 10px;
+    border-radius: 10px;
+    border-left: 3px solid #555;
+}
+
+.coach-section strong {
+    font-size: 14px;
+    color: #fff;
+}
+
+.coach-section p {
+    margin: 2px 0 0 0;
+    font-size: 13px;
+    color: #ccc;
+}
+
+/* ------------------------------------- */
+/*               PRECIO                   */
+/* ------------------------------------- */
+
 .precio {
-    font-size: 24px;
+    font-size: 16px;
+    margin-top: 10px;
     font-weight: bold;
-    color: #00ffb0;
-    margin: 20px 0;
-    text-shadow: 0 0 10px #00ffb0;
 }
 
-/* BOTÓN CONTRATAR */
+/* ------------------------------------- */
+/*             BOTÓN CONTRATAR            */
+/* ------------------------------------- */
+
 .contratar-btn {
-    padding: 16px 40px;
-    background: linear-gradient(45deg, #00eaff, #00ffb0);
-    color: #0b0b0d;
+    margin-top: 12px;
+    padding: 8px 18px;
+    background: #0077ff;
     border: none;
-    border-radius: 18px;
-    font-size: 20px;
-    font-weight: bold;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #fff;
     cursor: pointer;
-    box-shadow: 0 6px 20px rgba(0, 234, 255, 0.6);
     transition: 0.3s;
 }
-
 .contratar-btn:hover {
-    transform: scale(1.08);
-    box-shadow: 0 8px 25px rgba(0, 255, 176, 0.8);
+    background: #005fd1;
 }
 
-/* BOTÓN VOLVER */
-.back-btn {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    padding: 16px 28px;
-    background: linear-gradient(45deg, #00eaff, #00ffb0);
-    color: #0b0b0d;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 14px;
-    text-decoration: none;
-    box-shadow: 0 5px 20px rgba(0, 234, 255, 0.6);
+/* ------------------------------------- */
+/*             ICONOS SOCIALES           */
+/* ------------------------------------- */
+
+.coach-socials {
+    margin-top: 10px;
+    display: flex;
+    gap: 12px;
+}
+
+.coach-socials img {
+    width: 25px;
+    height: 25px;          /* mantiene proporción */
+    object-fit: contain;
+    filter: brightness(0.9);
     transition: 0.3s;
 }
-
-.back-btn:hover {
-    transform: scale(1.08);
-    box-shadow: 0 8px 25px rgba(0, 255, 176, 0.8);
+.coach-socials img:hover {
+    filter: brightness(1.3);
 }
