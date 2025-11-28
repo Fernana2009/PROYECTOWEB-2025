@@ -79,8 +79,8 @@ body {
 /* CUADRO DE RESULTADOS */
 .search-results {
     position: absolute;
-    top: 55px;                /* justo debajo del buscador */
-    right: 70px;              /* alineado con el buscador */
+    top: 65px;                /* justo debajo del buscador */
+    right: 65px;              /* alineado con el buscador */
     width: 280px;             /* mismo ancho del buscador */
     background: #1b1b1b;
     border: 1px solid #333;
