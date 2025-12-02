@@ -169,3 +169,95 @@ body {
 .coach-socials img:hover {
     filter: brightness(1.3);
 }
+/* ------------------------- */
+/*  HEADER                   */
+/* ------------------------- */
+/* ------------------------- */
+/*  HEADER                   */
+/* ------------------------- */
+.header {
+    width: 100%;
+    height: 70px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    position: relative;
+}
+
+/* LOGO */
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* FRASE CENTRADA */
+.tagline {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #bbb;
+    font-size: 16px;
+    letter-spacing: 1px;
+    opacity: 0.85;
+    white-space: nowrap;
+}
+
+/* BUSCADOR */
+.buscador {
+    width: 280px;
+    padding: 10px 30px;
+    border-radius: 25px;
+    background-color: #1e1e1e;
+    border: 1px solid #2a2a2a;
+    color: #ffffff;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+    transition: background-color .2s ease, box-shadow .2s ease;
+    margin-right: 45px; /* separación con el borde derecho */
+}
+
+.buscador::placeholder {
+    color: #ffffff80;
+}
+
+.buscador:hover {
+    background-color: #252525;
+}
+
+.buscador:focus {
+    background-color: #2a2a2a;
+    box-shadow: 0 0 8px #00000080;
+}
+
+/* CUADRO DE RESULTADOS */
+.search-results {
+    position: absolute;
+    top: 55px;                /* justo debajo del buscador */
+    right: 70px;              /* alineado con el buscador */
+    width: 280px;             /* mismo ancho del buscador */
+    background: #1b1b1b;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 8px 0;
+    display: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    z-index: 999;
+}
+
+.search-item {
+    padding: 10px 15px;
+    color: #ddd;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.search-item:hover {
+    background: #292929;
+}

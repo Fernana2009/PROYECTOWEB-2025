@@ -303,3 +303,18 @@ h1 {
     font-size: 14px;
     margin-top: 5px;
 }
+/* Hace clickeable la tarjeta completa sin cambiar su estilo */
+.coach-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.coach-link .coach-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+}
+
+.coach-link .coach-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 18px rgba(255,255,255,0.25);
+}

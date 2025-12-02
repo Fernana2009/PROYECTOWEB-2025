@@ -302,3 +302,23 @@ h1 {
     font-size: 14px;
     margin-top: 5px;
 }
+.coach-card {
+    display: block;
+    background: #111;
+    padding: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    width: 260px;
+    transition: transform .2s, box-shadow .2s;
+}
+
+.coach-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255,255,255,.3);
+}
+
+.coach-card img {
+    width: 100%;
+    border-radius: 10px;
+}
