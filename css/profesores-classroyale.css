@@ -1,78 +1,66 @@
-/* ======== FUENTE GAMER OPCIONAL ======== */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-
-/* ======== ESTILOS GENERALES ======== */
+/* Fondo general */
 body {
-    background: #0b0b0d; /* negro gamer */
+    background-color: #0d0d0d;
     color: white;
-    font-family: 'Orbitron', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-/* ======== TÍTULO ======== */
+/* Título principal */
 h1 {
     margin-top: 40px;
-    font-size: 40px;
-    text-shadow: 0 0 10px #00eaff; /* brillo azul */
+    font-size: 38px;
+    font-weight: 800;
+    color: #e5e5e5;
 }
 
-/* ======== CONTENEDOR DEL SLIDER ======== */
+/* Slider */
 .slider {
-    margin-top: 50px;
     display: flex;
     justify-content: center;
     gap: 40px;
-    flex-wrap: wrap; /* por si la pantalla es pequeña */
+    margin-top: 50px;
 }
 
-/* ======== TARJETA DEL COACH ======== */
+/* Tarjeta */
 .coach-card {
-    background: #141418;
-    border: 2px solid #00eaff;
-    width: 260px;
-    height: 380px;
-    border-radius: 18px;
+    background: #1a1a1a;
     padding: 20px;
-    box-shadow: 0 0 15px #00eaff60;
-    transition: 0.3s;
+    width: 260px;
+    border-radius: 18px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .6);
+    transition: transform .3s ease, box-shadow .3s ease;
 }
 
-/* ======== EFECTO HOVER ======== */
+/* Hover */
 .coach-card:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 0 25px #00eaff;
-    border-color: #00f7ff;
+    transform: translateY(-6px);
+    box-shadow: 0 0 18px rgba(0, 0, 0, .8);
 }
 
-/* ======== IMÁGENES ======== */
+/* Imagen */
 .coach-card img {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    border: 3px solid #00eaff;
-    box-shadow: 0 0 10px #00eaff;
-    object-fit: cover;
+    width: 100%;
+    height: 250px;     /* <-- tamaño fijo */
+    object-fit: cover; /* <-- recorta para que no se deforme */
+    border-radius: 12px;
+    margin-bottom: 10px;
+    display: block;
 }
 
-/* ======== NOMBRE ======== */
-.coach-card h2 {
-    font-size: 24px;
-    margin-top: 15px;
-    color: #00eaff;
-}
 
-/* ======== ESTRELLAS ======== */
+/* Estrellas */
 .stars {
     font-size: 20px;
-    margin-top: -5px;
-    color: gold;
+    margin: 8px 0;
+    color: #cccccc;
 }
 
-/* ======== DESCRIPCIÓN ======== */
+/* Descripción */
 .descripcion {
-    font-size: 15px;
-    margin-top: 10px;
-    opacity: 0.9;
+    color: #bbbbbb;
+    font-size: 14px;
+    margin-top: 5px;
 }
